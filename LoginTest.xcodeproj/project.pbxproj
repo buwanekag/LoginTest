@@ -12,6 +12,7 @@
 		5E56344D1C4FCD6100B148C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E56344B1C4FCD6100B148C9 /* Main.storyboard */; };
 		5E56344F1C4FCD6100B148C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E56344E1C4FCD6100B148C9 /* Assets.xcassets */; };
 		5E5634521C4FCD6100B148C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5634501C4FCD6100B148C9 /* LaunchScreen.storyboard */; };
+		5EB068621C6665B100629423 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB068611C6665B100629423 /* Authentication.swift */; };
 		821094846FCF52E59392AD49 /* Pods_LoginTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C53DCC68EF9D8065C59649D /* Pods_LoginTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		5E56344E1C4FCD6100B148C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E5634511C4FCD6100B148C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E5634531C4FCD6100B148C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EB068611C6665B100629423 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = ../Authentication.swift; sourceTree = "<group>"; };
 		6BFE77315E6D8DEF5A43F250 /* Pods-LoginTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginTest/Pods-LoginTest.release.xcconfig"; sourceTree = "<group>"; };
 		77573A643BC37851E58F4937 /* Pods-LoginTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginTest/Pods-LoginTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 			children = (
 				5E5634471C4FCD6100B148C9 /* AppDelegate.swift */,
 				5E5634491C4FCD6100B148C9 /* ViewController.swift */,
+				5EB068611C6665B100629423 /* Authentication.swift */,
 				5E56344B1C4FCD6100B148C9 /* Main.storyboard */,
 				5E56344E1C4FCD6100B148C9 /* Assets.xcassets */,
 				5E5634501C4FCD6100B148C9 /* LaunchScreen.storyboard */,
@@ -212,6 +215,7 @@
 			files = (
 				5E56344A1C4FCD6100B148C9 /* ViewController.swift in Sources */,
 				5E5634481C4FCD6100B148C9 /* AppDelegate.swift in Sources */,
+				5EB068621C6665B100629423 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

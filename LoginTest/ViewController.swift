@@ -11,12 +11,15 @@ import HMACSigner
 
 class ViewController: UIViewController {
     
+    
+    
     @IBOutlet weak var usernameTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var loginButton: UIButton!
     var baseUrlString = "medlink-staging.herokuapp.com"
+    var loginArray = [Authentication]()
     
     //MARK: - Interactive Method 
     
@@ -47,12 +50,35 @@ class ViewController: UIViewController {
             let task = urlSession.dataTaskWithRequest(request, completionHandler: { (data ,response,error ) -> Void in
                 print("response\(response)")
                 
+                if data != nil {
+                   // self.parseLoginData(data!)
+                    print("data\(data)")
+                    
+                } else {
+                    print("No Data")
+                }
+                
             })
             task.resume()
         }
     }
     
     //MARK: - Parse and store response
+    
+    func parseLoginData(data:NSData){
+        do {
+            let jsonResult = try NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers)
+           // let loginid = jsonResult.objectForKey("id")
+            let newLogin = Authentication()
+            
+            newLogin.id = jsonResult.objectForKey("id") as! String
+            newLogin.secretKey = jsonResult.objectForKey("secret_key") as! String
+            
+            print("result\(jsonResult)")
+        } catch{
+            print("JSON Parsing Error")
+        }
+    }
     
     //MARK: - Life Cycle Method
 
